@@ -9,32 +9,27 @@
 <div>
     <h4>Account</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Balance)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Balance)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Months)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Months)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Interest)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Interest)
-        </dd>
-    </dl>
+    <table class="table table-sm">
+        <tbody>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Balance)</td>
+                <td>@Html.DisplayFor(model => model.Balance)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Rate)</td>
+                <td>@Html.DisplayFor(model => model.Rate)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Months)</td>
+                <td>@Html.DisplayFor(model => model.Months)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Interest)</td>
+                <td>@Html.DisplayFor(model => model.Interest)</td>
+            </tr>
+            
+        </tbody>
+    </table>
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
